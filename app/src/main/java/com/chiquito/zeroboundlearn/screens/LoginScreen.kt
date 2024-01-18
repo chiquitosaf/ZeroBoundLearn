@@ -65,8 +65,11 @@ fun LoginScreen(navController: NavController){
         InputTextField("Username", modifier = Modifier.padding(top = 38.dp))
         InputTextField("Password", modifier = Modifier.padding(top = 26.dp))
 
+        //sign in button
         Button(
-            onClick = { /*TODO*/ },
+            onClick = {
+                      navController.navigate(Screen.Main.route)
+            },
             modifier = Modifier
                 .padding(top = 38.dp)
                 .height(43.dp)
